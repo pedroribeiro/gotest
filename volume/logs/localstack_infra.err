@@ -1,0 +1,286 @@
+SERVICES variable is ignored if EAGER_SERVICE_LOADING=0.
+2023-02-14T18:42:48.650 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_patch_botocore_json_parser', value='localstack.aws.client:_patch_botocore_json_parser', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.651 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_publish_config_as_analytics_event', value='localstack.runtime.analytics:_publish_config_as_analytics_event', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.651 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_run_init_scripts_on_start', value='localstack.runtime.init:_run_init_scripts_on_start', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='deprecation_warnings', value='localstack.plugins:deprecation_warnings', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_partition_adjusting_proxy_listener', value='localstack.plugins:register_partition_adjusting_proxy_listener', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_aws_request_logger', value='localstack_ext.analytics.plugins:add_aws_request_logger', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.654 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_custom_edge_routes', value='localstack_ext.plugins:add_custom_edge_routes', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.657 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_iam_enforcement_listener', value='localstack_ext.services.iam.plugins:add_iam_enforcement_listener', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.658 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_legacy_iam_enforcement_listener', value='localstack_ext.services.iam.plugins:add_legacy_iam_enforcement_listener', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.658 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='deprecation_warnings_pro', value='localstack_ext.plugins:deprecation_warnings_pro', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.658 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='extensions_on_infra_start', value='localstack_ext.extensions.plugins:extensions_on_infra_start', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.659 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='init_stackinfo_handler', value='localstack_ext.services.internal.stackinfo.plugins:init_stackinfo_handler', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.659 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_launchpad_api', value='localstack_ext.bootstrap.pods.launchpad.plugins:register_launchpad_api', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.660 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_public_pods_api', value='localstack_ext.persistence.plugins:register_public_pods_api', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.661 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_restricted_pods_api', value='localstack_ext.persistence.plugins:register_restricted_pods_api', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.661 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_state_serializer_handlers', value='localstack_ext.persistence.plugins:register_state_serializer_handlers', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.661 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='setup_pro_infra', value='localstack_ext.plugins:setup_pro_infra', group='localstack.hooks.on_infra_start')
+2023-02-14T18:42:48.661 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._patch_botocore_json_parser = <function _patch_botocore_json_parser at 0x7f627e3b67a0>)
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:_patch_botocore_json_parser
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._publish_config_as_analytics_event = <function _publish_config_as_analytics_event at 0x7f627e3b6b00>)
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:_publish_config_as_analytics_event
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._run_init_scripts_on_start = <function _run_init_scripts_on_start at 0x7f627e3b7760>)
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:_run_init_scripts_on_start
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.deprecation_warnings = <function deprecation_warnings at 0x7f627e3b7f40>)
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:deprecation_warnings
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_partition_adjusting_proxy_listener = <function register_partition_adjusting_proxy_listener at 0x7f627e3b7e20>)
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_partition_adjusting_proxy_listener is disabled
+2023-02-14T18:42:48.662 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_aws_request_logger = <function add_aws_request_logger at 0x7f627e3dc280>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_aws_request_logger is disabled
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_custom_edge_routes = <function add_custom_edge_routes at 0x7f627e3dfb50>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_custom_edge_routes is disabled
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_iam_enforcement_listener = <function add_iam_enforcement_listener at 0x7f627e400b80>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_iam_enforcement_listener is disabled
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_legacy_iam_enforcement_listener = <function add_legacy_iam_enforcement_listener at 0x7f627e4009d0>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_legacy_iam_enforcement_listener is disabled
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.deprecation_warnings_pro = <function deprecation_warnings_pro at 0x7f627e4004c0>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:deprecation_warnings_pro
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.extensions_on_infra_start = <function extensions_on_infra_start at 0x7f627e400ee0>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:extensions_on_infra_start is disabled
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.init_stackinfo_handler = <function init_stackinfo_handler at 0x7f627e401510>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:init_stackinfo_handler is disabled
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_launchpad_api = <function register_launchpad_api at 0x7f627e4016c0>)
+2023-02-14T18:42:48.663 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:register_launchpad_api
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_public_pods_api = <function register_public_pods_api at 0x7f627e401b40>)
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:register_public_pods_api
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_restricted_pods_api = <function register_restricted_pods_api at 0x7f627e401a20>)
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_restricted_pods_api is disabled
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_state_serializer_handlers = <function register_state_serializer_handlers at 0x7f627e401c60>)
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_state_serializer_handlers is disabled
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.setup_pro_infra = <function setup_pro_infra at 0x7f627e400160>)
+2023-02-14T18:42:48.664 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:setup_pro_infra is disabled
+2023-02-14T18:42:48.665 DEBUG --- [  MainThread] localstack.runtime.init    : Init scripts discovered: {BOOT: [], START: [], READY: [], SHUTDOWN: []}
+2023-02-14T18:42:48.666 DEBUG --- [  MainThread] localstack.plugins         : Checking for the usage of deprecated community features and configs...
+2023-02-14T18:42:48.666  WARN --- [  MainThread] localstack.deprecations    : INIT_SCRIPTS_PATH is deprecated (since 1.1.0) and will be removed in upcoming releases of LocalStack! Please use the pluggable initialization hooks in /etc/localhost/init/<stage>.d instead.
+2023-02-14T18:42:48.739 DEBUG --- [  MainThread] l.a.p.service_router       : loading service catalog index cache file /var/lib/localstack/cache/service-catalog-1_3_2_dev-1_29_66.pickle
+2023-02-14T18:42:48.804 DEBUG --- [  MainThread] localstack.utils.threads   : start_thread called without providing a custom name
+2023-02-14T18:42:48.827  WARN --- [-functhread2] l.services.internal        : Enabling diagnose endpoint, please be aware that this can expose sensitive information via your network.
+2023-02-14T18:42:48.836 DEBUG --- [-functhread2] l.bootstrap.install        : Using cached SSL certificate (less than 6hrs since last update).
+2023-02-14T18:42:48.839  WARN --- [-functhread3] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-02-14T18:42:48.839  WARN --- [-functhread3] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-02-14T18:42:48.840  INFO --- [-functhread3] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-02-14T18:42:48.840  INFO --- [-functhread3] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-02-14T18:42:49.106 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='acm:default', value='localstack.services.providers:acm', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigateway:default', value='localstack.services.providers:apigateway', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudformation:default', value='localstack.services.providers:cloudformation', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudwatch:default', value='localstack.services.providers:cloudwatch', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='config:default', value='localstack.services.providers:awsconfig', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodb:default', value='localstack.services.providers:dynamodb', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodbstreams:default', value='localstack.services.providers:dynamodbstreams', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ec2:default', value='localstack.services.providers:ec2', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='es:default', value='localstack.services.providers:es', group='localstack.aws.provider')
+2023-02-14T18:42:49.109 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='events:default', value='localstack.services.providers:events', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='firehose:default', value='localstack.services.providers:firehose', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iam:default', value='localstack.services.providers:iam', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesis:default', value='localstack.services.providers:kinesis', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kms:default', value='localstack.services.providers:kms', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:asf', value='localstack.services.providers:awslambda_asf', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:default', value='localstack.services.providers:awslambda', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:v2', value='localstack.services.providers:awslambda_v2', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='logs:default', value='localstack.services.providers:logs', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='opensearch:default', value='localstack.services.providers:opensearch', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='redshift:default', value='localstack.services.providers:redshift', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='resource-groups:default', value='localstack.services.providers:resource_groups', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='resourcegroupstaggingapi:default', value='localstack.services.providers:resourcegroupstaggingapi', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='route53:default', value='localstack.services.providers:route53', group='localstack.aws.provider')
+2023-02-14T18:42:49.110 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='route53resolver:default', value='localstack.services.providers:route53resolver', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:asf', value='localstack.services.providers:s3_asf', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:default', value='localstack.services.providers:s3', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:v2', value='localstack.services.providers:s3_v2', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3control:default', value='localstack.services.providers:s3control', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='secretsmanager:default', value='localstack.services.providers:secretsmanager', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ses:default', value='localstack.services.providers:ses', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sns:default', value='localstack.services.providers:sns', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sqs:default', value='localstack.services.providers:sqs', group='localstack.aws.provider')
+2023-02-14T18:42:49.111 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ssm:default', value='localstack.services.providers:ssm', group='localstack.aws.provider')
+2023-02-14T18:42:49.112 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='stepfunctions:default', value='localstack.services.providers:stepfunctions', group='localstack.aws.provider')
+2023-02-14T18:42:49.112 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sts:default', value='localstack.services.providers:sts', group='localstack.aws.provider')
+2023-02-14T18:42:49.112 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='support:default', value='localstack.services.providers:support', group='localstack.aws.provider')
+2023-02-14T18:42:49.112 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='swf:default', value='localstack.services.providers:swf', group='localstack.aws.provider')
+2023-02-14T18:42:49.112 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='transcribe:default', value='localstack.services.providers:transcribe', group='localstack.aws.provider')
+2023-02-14T18:42:49.112 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='acm:pro', value='localstack_ext.providers:acm', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='amplify:pro', value='localstack_ext.providers:amplify', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigateway:pro', value='localstack_ext.providers:apigateway', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigatewaymanagementapi:pro', value='localstack_ext.providers:apigatewaymanagementapi', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigatewayv2:pro', value='localstack_ext.providers:apigatewayv2', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='appconfig:pro', value='localstack_ext.providers:appconfig', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='application-autoscaling:pro', value='localstack_ext.providers:application_autoscaling', group='localstack.aws.provider')
+2023-02-14T18:42:49.115 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='appsync:pro', value='localstack_ext.providers:appsync', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='athena:pro', value='localstack_ext.providers:athena', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='autoscaling:pro', value='localstack_ext.providers:autoscaling', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='azure:pro', value='localstack_ext.providers:azure', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='backup:pro', value='localstack_ext.providers:backup', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='batch:pro', value='localstack_ext.providers:batch', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ce:pro', value='localstack_ext.providers:ce', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudformation:pro', value='localstack_ext.providers:cloudformation', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudfront:pro', value='localstack_ext.providers:cloudfront', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudtrail:pro', value='localstack_ext.providers:cloudtrail', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudwatch:pro', value='localstack_ext.providers:cloudwatch', group='localstack.aws.provider')
+2023-02-14T18:42:49.116 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='codecommit:pro', value='localstack_ext.providers:codecommit', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cognito-identity:pro', value='localstack_ext.providers:cognito_identity', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cognito-idp:pro', value='localstack_ext.providers:cognito_idp', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='docdb:pro', value='localstack_ext.providers:docdb', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodb:pro', value='localstack_ext.providers:dynamodb', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodbstreams:pro', value='localstack_ext.providers:dynamodbstreams', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ec2:pro', value='localstack_ext.providers:ec2', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ecr:pro', value='localstack_ext.providers:ecr', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ecs:pro', value='localstack_ext.providers:ecs', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='efs:pro', value='localstack_ext.providers:efs', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='eks:mock', value='localstack_ext.providers:eks_mock', group='localstack.aws.provider')
+2023-02-14T18:42:49.117 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='eks:pro', value='localstack_ext.providers:eks', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elasticache:pro', value='localstack_ext.providers:elasticache', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elasticbeanstalk:pro', value='localstack_ext.providers:elasticbeanstalk', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elb:pro', value='localstack_ext.providers:elb', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elbv2:pro', value='localstack_ext.providers:elbv2', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='emr:pro', value='localstack_ext.providers:emr', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='events:pro', value='localstack_ext.providers:events', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='fis:pro', value='localstack_ext.providers:fis', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='glacier:pro', value='localstack_ext.providers:glacier', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='glue:pro', value='localstack_ext.providers:glue', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iam:pro', value='localstack_ext.providers:iam', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iot-data:pro', value='localstack_ext.providers:iot_data', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iot:pro', value='localstack_ext.providers:iot', group='localstack.aws.provider')
+2023-02-14T18:42:49.118 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iotanalytics:pro', value='localstack_ext.providers:iotanalytics', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iotwireless:pro', value='localstack_ext.providers:iotwireless', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kafka:pro', value='localstack_ext.providers:kafka', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesis:pro', value='localstack_ext.providers:kinesis', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesisanalytics:pro', value='localstack_ext.providers:kinesisanalytics', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesisanalyticsv2:pro', value='localstack_ext.providers:kinesisanalyticsv2', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kms:pro', value='localstack_ext.providers:kms', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lakeformation:pro', value='localstack_ext.providers:lakeformation', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:pro', value='localstack_ext.providers:awslambda', group='localstack.aws.provider')
+2023-02-14T18:42:49.119 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='logs:pro', value='localstack_ext.providers:logs', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mediastore-data:pro', value='localstack_ext.providers:mediastore_data', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mediastore:pro', value='localstack_ext.providers:mediastore', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mq:pro', value='localstack_ext.providers:mq', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mwaa:pro', value='localstack_ext.providers:mwaa', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='neptune:pro', value='localstack_ext.providers:neptune', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='opensearch:pro', value='localstack_ext.providers:opensearch', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='organizations:pro', value='localstack_ext.providers:organizations', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='qldb-session:pro', value='localstack_ext.providers:qldb_session', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='qldb:pro', value='localstack_ext.providers:qldb', group='localstack.aws.provider')
+2023-02-14T18:42:49.120 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='rds-data:pro', value='localstack_ext.providers:rds_data', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='rds:pro', value='localstack_ext.providers:rds', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='redshift-data:pro', value='localstack_ext.providers:redshift_data', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='redshift:pro', value='localstack_ext.providers:redshift', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='route53:pro', value='localstack_ext.providers:route53', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:asf_pro', value='localstack_ext.providers:s3_asf', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:pro', value='localstack_ext.providers:s3', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sagemaker-runtime:pro', value='localstack_ext.providers:sagemaker_runtime', group='localstack.aws.provider')
+2023-02-14T18:42:49.121 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sagemaker:pro', value='localstack_ext.providers:sagemaker', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='secretsmanager:pro', value='localstack_ext.providers:secretsmanager', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='serverlessrepo:pro', value='localstack_ext.providers:serverlessrepo', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='servicediscovery:pro', value='localstack_ext.providers:servicediscovery', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ses:pro', value='localstack_ext.providers:ses', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sesv2:pro', value='localstack_ext.providers:sesv2', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sns:pro', value='localstack_ext.providers:sns', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sqs:pro', value='localstack_ext.providers:sqs', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ssm:pro', value='localstack_ext.providers:ssm', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='stepfunctions:pro', value='localstack_ext.providers:stepfunctions', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sts:pro', value='localstack_ext.providers:sts', group='localstack.aws.provider')
+2023-02-14T18:42:49.122 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='timestream-query:pro', value='localstack_ext.providers:timestream_query', group='localstack.aws.provider')
+2023-02-14T18:42:49.123 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='timestream-write:pro', value='localstack_ext.providers:timestream_write', group='localstack.aws.provider')
+2023-02-14T18:42:49.123 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='transfer:pro', value='localstack_ext.providers:transfer', group='localstack.aws.provider')
+2023-02-14T18:42:49.123 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='xray:pro', value='localstack_ext.providers:xray', group='localstack.aws.provider')
+2023-02-14T18:42:49.124 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_run_init_scripts_on_ready', value='localstack.runtime.init:_run_init_scripts_on_ready', group='localstack.hooks.on_infra_ready')
+2023-02-14T18:42:49.124 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_virtual_host_routes', value='localstack.services.s3.virtual_host:register_virtual_host_routes', group='localstack.hooks.on_infra_ready')
+2023-02-14T18:42:49.145 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='extensions_on_infra_ready', value='localstack_ext.extensions.plugins:extensions_on_infra_ready', group='localstack.hooks.on_infra_ready')
+2023-02-14T18:42:49.146 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='initialize_health_info', value='localstack_ext.plugins:initialize_health_info', group='localstack.hooks.on_infra_ready')
+2023-02-14T18:42:49.146 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready._run_init_scripts_on_ready = <function _run_init_scripts_on_ready at 0x7f627e3b7880>)
+2023-02-14T18:42:49.147 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_ready:_run_init_scripts_on_ready
+2023-02-14T18:42:49.147 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.register_virtual_host_routes = <function register_virtual_host_routes at 0x7f626f75f250>)
+2023-02-14T18:42:49.147 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_ready:register_virtual_host_routes is disabled
+2023-02-14T18:42:49.147 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.extensions_on_infra_ready = <function extensions_on_infra_ready at 0x7f627e401000>)
+2023-02-14T18:42:49.148 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_ready:extensions_on_infra_ready is disabled
+2023-02-14T18:42:49.148 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.initialize_health_info = <function initialize_health_info at 0x7f627e4003a0>)
+2023-02-14T18:42:49.148 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_ready:initialize_health_info is disabled
+2023-02-14T18:42:53.674 DEBUG --- [   asgi_gw_0] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.lambda:default = <function awslambda at 0x7f627d236d40>)
+2023-02-14T18:42:53.674 DEBUG --- [   asgi_gw_0] plugin.manager             : loading plugin localstack.aws.provider:lambda:default
+2023-02-14T18:42:54.120  INFO --- [   asgi_gw_0] localstack.services.infra  : Starting mock Lambda service on http port 4566 ...
+2023-02-14T18:42:54.896  INFO --- [   asgi_gw_0] localstack.utils.bootstrap : Execution of "require" took 1222.85ms
+2023-02-14T18:42:54.993 DEBUG --- [functhread10] localstack.utils.run       : Executing command: ['unzip', '-o', '-q', '/var/lib/localstack/tmp/function.zipfile.c06ce8ef/original_lambda_archive.zip']
+2023-02-14T18:42:55.076 DEBUG --- [functhread10] l.s.awslambda.lambda_api   : Function code initialization for function 'gotest1' complete. State => Active (in 0.147s)
+2023-02-14T18:42:55.441  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.CreateFunction => 200
+2023-02-14T18:42:57.495  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2023-02-14T18:42:58.531 DEBUG --- [   asgi_gw_0] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.apigateway:default = <function apigateway at 0x7f627d235ea0>)
+2023-02-14T18:42:58.531 DEBUG --- [   asgi_gw_0] plugin.manager             : loading plugin localstack.aws.provider:apigateway:default
+2023-02-14T18:42:58.655 DEBUG --- [   asgi_gw_0] l.s.apigateway.router_asf  : Registering parameterized API gateway routes.
+2023-02-14T18:42:58.662 DEBUG --- [   asgi_gw_0] l.services.plugins         : checking service health apigateway:4566
+2023-02-14T18:42:58.948  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.CreateRestApi => 201
+2023-02-14T18:42:59.913  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.GetRestApis => 200
+2023-02-14T18:43:00.887  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.GetResources => 200
+2023-02-14T18:43:01.851  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.CreateResource => 201
+2023-02-14T18:43:02.823  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.GetResources => 200
+2023-02-14T18:43:03.735  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.PutMethod => 201
+2023-02-14T18:43:04.693  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.PutIntegration => 201
+2023-02-14T18:43:05.629  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.CreateDeployment => 201
+2023-02-14T18:43:24.225  INFO --- [   asgi_gw_0] l.s.apigateway.templates   : Method request body before transformations: 
+2023-02-14T18:43:24.225 DEBUG --- [   asgi_gw_0] l.s.apigateway.integration : Running Lambda function arn:aws:lambda:us-east-1:000000000000:function:gotest1 from API Gateway invocation: GET /HowMuchIsTheFish
+2023-02-14T18:43:24.236 DEBUG --- [uest_thread)] l.s.awslambda.lambda_api   : Running lambda arn:aws:lambda:us-east-1:000000000000:function:gotest1
+2023-02-14T18:43:24.786 DEBUG --- [uest_thread)] l.u.c.container_client     : Getting networks for container: localstack_main
+2023-02-14T18:43:24.787  INFO --- [uest_thread)] l.u.container_networking   : Unable to get network name of main container "localstack_main": localstack_main
+2023-02-14T18:43:24.788 DEBUG --- [uest_thread)] l.u.c.container_client     : Getting ipv4 address for container localstack_main in network None.
+2023-02-14T18:43:24.789  INFO --- [uest_thread)] l.u.container_networking   : Unable to get IP address of main Docker container "localstack_main": localstack_main
+2023-02-14T18:43:24.789  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:gotest1
+2023-02-14T18:43:24.789 DEBUG --- [uest_thread)] stevedore.extension        : found extension EntryPoint(name='docker_separate_lambda_execution', value='localstack_ext.services.awslambda.lambda_launcher:docker_separate_lambda_execution', group='localstack.hooks.on_docker_separate_execution')
+2023-02-14T18:43:24.790 ERROR --- [uest_thread)] plugin.manager             : error importing entrypoint EntryPoint(name='docker_separate_lambda_execution', value='localstack_ext.services.awslambda.lambda_launcher:docker_separate_lambda_execution', group='localstack.hooks.on_docker_separate_execution'): No module named 'localstack_ext.services.awslambda.lambda_launcher'
+2023-02-14T18:43:24.790 DEBUG --- [uest_thread)] plugin.manager             : no extensions found in namespace localstack.hooks.on_docker_separate_execution
+2023-02-14T18:43:24.790 DEBUG --- [uest_thread)] l.u.c.docker_sdk_client    : Creating container with attributes: {'mount_volumes': None, 'ports': <PortMappings: {}>, 'cap_add': None, 'cap_drop': None, 'security_opt': None, 'dns': '', 'additional_flags': '', 'workdir': None, 'privileged': None, 'labels': None, 'command': 'main', 'detach': False, 'entrypoint': None, 'env_vars': {'AWS_ACCESS_KEY_ID': 'test', 'AWS_SECRET_ACCESS_KEY': 'test', 'AWS_REGION': 'us-east-1', 'DOCKER_LAMBDA_USE_STDIN': '1', 'LOCALSTACK_HOSTNAME': '172.17.0.1', 'EDGE_PORT': '4566', '_HANDLER': 'main', 'AWS_LAMBDA_FUNCTION_TIMEOUT': '3', 'AWS_LAMBDA_FUNCTION_NAME': 'gotest1', 'AWS_LAMBDA_FUNCTION_VERSION': '$LATEST', 'AWS_LAMBDA_FUNCTION_INVOKED_ARN': 'arn:aws:lambda:us-east-1:000000000000:function:gotest1'}, 'image_name': 'lambci/lambda:go1.x', 'interactive': True, 'name': None, 'network': None, 'remove': True, 'self': <localstack.utils.container_utils.docker_sdk_client.SdkDockerClient object at 0x7f627f6bef20>, 'tty': False, 'user': None}
+2023-02-14T18:43:24.811 DEBUG --- [uest_thread)] l.u.c.docker_sdk_client    : Copying file /tmp/function.zipfile.c06ce8ef/. into 58626f0da9ca736611721f6b2b76ec1c0a06e2159dcc73ec4414854f16678d5d:/var/task
+2023-02-14T18:43:24.991 DEBUG --- [uest_thread)] l.u.c.docker_sdk_client    : Starting container 58626f0da9ca736611721f6b2b76ec1c0a06e2159dcc73ec4414854f16678d5d
+2023-02-14T18:43:25.578 DEBUG --- [uest_thread)] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-east-1:000000000000:function:gotest1 result / log output:
+{"statusCode":202,"headers":null,"multiValueHeaders":null,"body":"{\"message\": \"  HowMuchIsTheFish \"}"}
+>[32mSTART RequestId: 679d4ae6-c05f-11c2-4968-e0eabb4d936e Version: $LATEST[0m
+> map[somethingId:HowMuchIsTheFish]
+> map[somethingId:HowMuchIsTheFish]
+> map[somethingId:HowMuchIsTheFish]
+> map[somethingId:HowMuchIsTheFish]
+> map[somethingId:HowMuchIsTheFish]
+> map[somethingId:HowMuchIsTheFish]
+> [32mEND RequestId: 679d4ae6-c05f-11c2-4968-e0eabb4d936e[0m
+> [32mREPORT RequestId: 679d4ae6-c05f-11c2-4968-e0eabb4d936e	Init Duration: 57.19 ms	Duration: 3.92 ms	Billed Duration: 4 ms	Memory Size: 1536 MB	Max Memory Used: 20 MB	[0m
+2023-02-14T18:43:25.598 DEBUG --- [   asgi_gw_2] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.logs:default = <function logs at 0x7f627d2370a0>)
+2023-02-14T18:43:25.598 DEBUG --- [   asgi_gw_2] plugin.manager             : loading plugin localstack.aws.provider:logs:default
+2023-02-14T18:43:25.620 DEBUG --- [   asgi_gw_2] l.services.plugins         : checking service health logs:4566
+2023-02-14T18:43:25.870 DEBUG --- [   asgi_gw_2] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.cloudwatch:default = <function cloudwatch at 0x7f627d236200>)
+2023-02-14T18:43:25.870 DEBUG --- [   asgi_gw_2] plugin.manager             : loading plugin localstack.aws.provider:cloudwatch:default
+2023-02-14T18:43:25.883 DEBUG --- [   asgi_gw_2] l.services.plugins         : checking service health cloudwatch:4566
+2023-02-14T18:43:25.935 DEBUG --- [uest_thread)] l.s.awslambda.lambda_api   : Lambda invocation duration: 1698.68ms
+2023-02-14T18:43:25.941  INFO --- [   asgi_gw_0] localstack.request.http    : GET /restapis/rl3wfrkror/test/_user_request_/HowMuchIsTheFish => 202
+2023-02-14T18:43:39.372  INFO --- [   asgi_gw_2] l.s.apigateway.templates   : Method request body before transformations: 
+2023-02-14T18:43:39.372 DEBUG --- [   asgi_gw_2] l.s.apigateway.integration : Running Lambda function arn:aws:lambda:us-east-1:000000000000:function:gotest1 from API Gateway invocation: GET /TCS
+2023-02-14T18:43:39.380 DEBUG --- [uest_thread)] l.s.awslambda.lambda_api   : Running lambda arn:aws:lambda:us-east-1:000000000000:function:gotest1
+2023-02-14T18:43:39.380  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:gotest1
+2023-02-14T18:43:39.381 DEBUG --- [uest_thread)] l.u.c.docker_sdk_client    : Creating container with attributes: {'mount_volumes': None, 'ports': <PortMappings: {}>, 'cap_add': None, 'cap_drop': None, 'security_opt': None, 'dns': '', 'additional_flags': '', 'workdir': None, 'privileged': None, 'labels': None, 'command': 'main', 'detach': False, 'entrypoint': None, 'env_vars': {'AWS_ACCESS_KEY_ID': 'test', 'AWS_SECRET_ACCESS_KEY': 'test', 'AWS_REGION': 'us-east-1', 'DOCKER_LAMBDA_USE_STDIN': '1', 'LOCALSTACK_HOSTNAME': '172.17.0.1', 'EDGE_PORT': '4566', '_HANDLER': 'main', 'AWS_LAMBDA_FUNCTION_TIMEOUT': '3', 'AWS_LAMBDA_FUNCTION_NAME': 'gotest1', 'AWS_LAMBDA_FUNCTION_VERSION': '$LATEST', 'AWS_LAMBDA_FUNCTION_INVOKED_ARN': 'arn:aws:lambda:us-east-1:000000000000:function:gotest1'}, 'image_name': 'lambci/lambda:go1.x', 'interactive': True, 'name': None, 'network': None, 'remove': True, 'self': <localstack.utils.container_utils.docker_sdk_client.SdkDockerClient object at 0x7f627f6bef20>, 'tty': False, 'user': None}
+2023-02-14T18:43:39.428 DEBUG --- [uest_thread)] l.u.c.docker_sdk_client    : Copying file /tmp/function.zipfile.c06ce8ef/. into e1fe339bbf2c64b3c8e791b47a3a3fac8ac8b69351fd58b1f455943b7f61aeb0:/var/task
+2023-02-14T18:43:39.735 DEBUG --- [uest_thread)] l.u.c.docker_sdk_client    : Starting container e1fe339bbf2c64b3c8e791b47a3a3fac8ac8b69351fd58b1f455943b7f61aeb0
+2023-02-14T18:43:40.287 DEBUG --- [uest_thread)] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-east-1:000000000000:function:gotest1 result / log output:
+{"statusCode":202,"headers":null,"multiValueHeaders":null,"body":"{\"message\": \"  TCS \"}"}
+>[32mSTART RequestId: aaf83d6c-25d0-122d-15a5-85755aa65175 Version: $LATEST[0m
+> map[somethingId:TCS]
+> map[somethingId:TCS]
+> map[somethingId:TCS]
+> map[somethingId:TCS]
+> map[somethingId:TCS]
+> map[somethingId:TCS]
+> [32mEND RequestId: aaf83d6c-25d0-122d-15a5-85755aa65175[0m
+> [32mREPORT RequestId: aaf83d6c-25d0-122d-15a5-85755aa65175	Init Duration: 71.74 ms	Duration: 4.19 ms	Billed Duration: 5 ms	Memory Size: 1536 MB	Max Memory Used: 20 MB	[0m
+2023-02-14T18:43:40.329 DEBUG --- [uest_thread)] l.s.awslambda.lambda_api   : Lambda invocation duration: 948.88ms
+2023-02-14T18:43:40.335  INFO --- [   asgi_gw_2] localstack.request.http    : GET /restapis/rl3wfrkror/test/_user_request_/TCS => 202
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] localstack.services.infra  : [shutdown] signal received 15
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_run_init_scripts_on_shutdown', value='localstack.runtime.init:_run_init_scripts_on_shutdown', group='localstack.hooks.on_infra_shutdown')
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='run_shutdown_handlers', value='localstack.runtime.shutdown:run_shutdown_handlers', group='localstack.hooks.on_infra_shutdown')
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='extensions_on_infra_shutdown', value='localstack_ext.extensions.plugins:extensions_on_infra_shutdown', group='localstack.hooks.on_infra_shutdown')
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_shutdown._run_init_scripts_on_shutdown = <function _run_init_scripts_on_shutdown at 0x7f627e3b79a0>)
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_shutdown:_run_init_scripts_on_shutdown
+2023-02-15T03:14:36.709 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_shutdown.run_shutdown_handlers = <function run_shutdown_handlers at 0x7f627d17fd00>)
+2023-02-15T03:14:36.710 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_shutdown:run_shutdown_handlers
+2023-02-15T03:14:36.710 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_shutdown.extensions_on_infra_shutdown = <function extensions_on_infra_shutdown at 0x7f627e401120>)
+2023-02-15T03:14:36.710 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_shutdown:extensions_on_infra_shutdown is disabled
+2023-02-15T03:14:36.710 DEBUG --- [  MainThread] localstack.services.infra  : [shutdown] Cleaning up services ...
+2023-02-15T03:14:36.717 DEBUG --- [  MainThread] localstack.services.infra  : [shutdown] Cleaning up resources ...
+2023-02-15T03:14:36.717 DEBUG --- [  MainThread] localstack.utils.run       : Executing command: rm -rf "/var/lib/localstack/tmp/function.zipfile.c06ce8ef"
+2023-02-15T03:14:36.719 DEBUG --- [  MainThread] localstack.utils.threads   : [shutdown] Done cleaning up threads / processes / tasks
+2023-02-15T03:14:36.719 DEBUG --- [  MainThread] localstack.utils.run       : Executing command: rm -rf "/var/lib/localstack/tmp"
+2023-02-15T03:14:36.721 DEBUG --- [  MainThread] localstack.services.infra  : [shutdown] Force shutdown, not waiting for infrastructure to shut down

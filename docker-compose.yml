@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  localstack:
+    image: localstack/localstack
+    container_name: localstack-example
+    hostname: localstack
+    ports:
+      - "4566:4566"
+    environment:
+      # Declare which aws services will be used in localstack
+      - SERVICES=s3,lambda,apigateway
+      - DEBUG=1
+      # These variables are needed for localstack
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=asd
+      - AWS_SECRET_ACCESS_KEY=asd
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - INIT_SCRIPTS_PATH=/root/init
+    volumes:
+      # - "./init-aws.sh:/etc/localstack/init/ready.d/init-aws.sh"
+      - "./aws:/root/init"
+      - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
